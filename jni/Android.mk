@@ -25,8 +25,8 @@ ifeq ($(TARGET_ARCH_ABI), armeabi-v7a)
 
 endif
 
-LOCAL_CFLAGS += -Os -march=armv8-a -mno-outline-atomics -mno-atomics -ffunction-sections -fdata-sections -fvisibility=hidden -fvisibility-inlines-hidden
-LOCAL_CPPFLAGS += -Os -march=armv8-a -mno-outline-atomics -mno-atomics -ffunction-sections -fdata-sections -fvisibility=hidden -fvisibility-inlines-hidden
+LOCAL_CFLAGS += -Os -march=armv8-a -mno-outline-atomics -ffunction-sections -fdata-sections -fvisibility=hidden -fvisibility-inlines-hidden
+LOCAL_CPPFLAGS += -Os -march=armv8-a -mno-outline-atomics -ffunction-sections -fdata-sections -fvisibility=hidden -fvisibility-inlines-hidden
 LOCAL_LDFLAGS += -Wl,--gc-sections
 
 LOCAL_LDLIBS += -llog
